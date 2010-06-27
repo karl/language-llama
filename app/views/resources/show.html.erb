@@ -1,6 +1,14 @@
 <p>
-  <b>Title:</b>
-  <%=h @resource.title %>
+  <h1><%=h @resource.title %></h1>
+
+	<% if @resource.document.exists? then %>
+  		<p>
+			<a href="<%=h @resource.document.url %>">Download</a>
+		</p>
+	<% else %>
+		<p> There is no document attached, please upload one. </p>
+	<% end %>
+
 </p>
 
 

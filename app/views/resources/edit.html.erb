@@ -1,11 +1,12 @@
 <h1>Editing resource</h1>
 
-<% form_for(@resource) do |f| %>
+<% form_for(@resource,:html => { :multipart => true }) do |f| %>
   <%= f.error_messages %>
 
   <p>
     <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%= f.text_field :title %><br />
+	<%= f.file_field :document %>
   </p>
   <p>
     <%= f.submit 'Update' %>
