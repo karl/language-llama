@@ -9,7 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100627165905) do
+ActiveRecord::Schema.define(:version => 20100627183628) do
+
+  create_table "languages", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "resources", :force => true do |t|
     t.string   "title"
@@ -19,6 +25,8 @@ ActiveRecord::Schema.define(:version => 20100627165905) do
     t.string   "document_content_type"
     t.integer  "document_file_size"
     t.datetime "document_updated_at"
+    t.integer  "language_id"
+    t.string   "description"
   end
 
 end

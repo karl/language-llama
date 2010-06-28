@@ -1,0 +1,25 @@
+<p>
+	<h1><%=h @language.name %></h1>
+
+	<small>id: <%=h @language.id %></small>
+
+	<% if @language.resources.empty? %>
+		<p><i>No resources in <%=h @language.name %>.</i></p>
+	<% else %>
+		
+		<ul class="resource">
+		  <% @language.resources.each do |resource| %>
+		    <li>
+		      <%= link_to h(resource.title), resource %>
+		      <small style="color: #aaa;"><%=h truncate(resource.description, 60, "...") %></small>
+		    </li>
+		  <% end %>
+		</ul>
+		
+	<% end %>
+
+</p>
+
+
+<%= link_to 'Edit', edit_language_path(@language) %> |
+<%= link_to 'Back', languages_path %>

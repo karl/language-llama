@@ -1,8 +1,14 @@
 <p>
-  <h1><%=h @resource.title %></h1>
-
+	<h1><%=h @resource.title %></h1>
+	
+	<small><%=h @resource.description %></small>
+	
+	<p>
+		Language: <%=h @resource.language.name %>
+	</p>
+	
 	<% if @resource.document.exists? then %>
-  		<p>
+ 		<p>
 			<a href="<%=h @resource.document.url %>">Download</a>
 		</p>
 	<% else %>

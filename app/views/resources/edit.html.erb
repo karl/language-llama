@@ -4,8 +4,16 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :title %><br />
+    <%= f.label :title %>
     <%= f.text_field :title %><br />
+
+    <%= f.label :description %>
+    <%= f.text_area :description %><br />
+
+    <%= f.label :language_id %>
+    <%= f.text_field :language_id %><br />
+
+    <%= f.label :document %>
 	<%= f.file_field :document %>
   </p>
   <p>
