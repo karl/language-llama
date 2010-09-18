@@ -1,0 +1,158 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  font-size: 43px;
+  font-weight: bold;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.02, rgb(186,210,245)),
+    color-stop(0.76, rgb(242,242,242))
+  );
+}
+
+button {
+}
+
+.clear {
+  clear: both;
+}
+
+#content {
+  margin: 0 auto;
+  width: 740px;
+  padding: 50px 60px;
+  
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.02, rgb(255,255,255)),
+    color-stop(0.76, rgb(240,240,240))
+  );
+  
+  -webkit-box-shadow: 0 0 50px #000;
+}
+
+#total {
+  width: 110px;
+  height: 50px;
+  line-height: 1;
+  padding: 5px 10px 15px 10px;
+  float: left;
+  margin-bottom: 50px;
+  margin-left: 300px;
+
+  font-family: monospace;
+  font-size: 60px;
+  
+  -webkit-box-shadow: inset 1px 1px 6px #000;
+  background: #444;
+  color: #83f03c;
+}
+
+#new-total {
+  border-radius: 100px;
+  height: 70px;
+  width: 70px;
+  background: #e00;
+  border: 10px outset #f00;
+  cursor: pointer;
+  float: left;
+  margin-left: 50px;
+
+  -webkit-box-shadow: 1px 1px 6px #000;
+}
+
+#shelf {
+  width: 500px;
+  height: 80px;
+  clear: left;
+  margin-left: 115px;
+
+  background: #fff;
+  border: 1px solid #bbb;
+  
+  -webkit-box-shadow: inset 1px 1px 6px #aaa;  
+}
+
+#number-board {
+  margin-top: 50px;
+  width: 340px;
+  float: left;
+}
+
+#large-numbers {
+  border: 1px solid #ffed9f;
+  background: #fff2b9;
+  -webkit-box-shadow: 1px 1px 6px #888;      
+
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+#small-numbers {
+  height: 370px;
+
+  border: 1px solid #ffed9f;
+  background: #fff2b9;
+  -webkit-box-shadow: 1px 1px 6px #888;      
+}
+
+#working-space {
+  width: 340px;
+  height: 474px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 50px;
+  
+  border: 1px solid #aaa;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 6px #888;    
+}
+
+.number {
+  float: left;
+  width: 70px;
+  height: 60px;
+  text-align: center;
+  margin: 10px;
+  margin-right: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  position: relative;
+  line-height: 1.4em;
+
+  border: 1px solid #444;
+  background: #0f49cf;
+  color: #fff;
+}
+
+.number .hundred  {
+  letter-spacing: -0.25em;
+  margin-left: -13px;
+}
+
+.number .cover {
+  position: absolute;
+  width: 70px;
+  height: 60px;
+  top: -1px;
+  left: -1px;
+  background-color: #ddd;
+  border: 1px solid #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
